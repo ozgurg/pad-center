@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/ozgurg/pad-center"
   },
+  "scripts": {
+    "lint:fix": "eslint --fix --ext .js .",
+    "lint": "eslint --ext .js ."
+  },
   "author": {
     "email": "ozgurgorgulu54@gmail.com",
     "name": "Özgür Görgülü",
