@@ -1,0 +1,22 @@
+{
+  "name": "pad-center",
+  "version": "0.1.0",
+  "description": "// TODO :)",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozgurg/pad-center"
+  },
+  "author": {
+    "email": "ozgurgorgulu54@gmail.com",
+    "name": "Özgür Görgülü",
+    "url": "https://github.com/ozgurg"
+  },
+  "keywords": [
+    "pad-center",
+    "pad",
+    "pad-middle",
+    "string"
+  ]
+}
