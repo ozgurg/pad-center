@@ -1,7 +1,7 @@
 {
     "name": "pad-center",
     "version": "0.1.0",
-    "description": "// TODO :)",
+    "description": "pad-center fills between start and end characters with whatever character you want while keeping the length constant.",
     "license": "MIT",
     "type": "module",
     "exports": "./index.js",
