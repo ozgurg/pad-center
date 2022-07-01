@@ -1,0 +1,44 @@
+{
+    "name": "pad-center",
+    "version": "1.0.0",
+    "description": "pad-center fills between start and end characters with whatever character you want while keeping the length constant.",
+    "license": "MIT",
+    "type": "module",
+    "exports": "./index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ozgurg/pad-center"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose",
+        "test:coverage": "npm run test -- --coverage",
+        "lint:fix": "npm run lint -- --fix",
+        "lint": "eslint --ext .js .",
+        "lint-staged": "lint-staged",
+        "prepare": "husky install"
+    },
+    "author": {
+        "email": "ozgurgorgulu54@gmail.com",
+        "name": "Özgür Görgülü",
+        "url": "https://github.com/ozgurg"
+    },
+    "keywords": [
+        "pad-center",
+        "pad",
+        "pad-middle",
+        "string"
+    ],
+    "devDependencies": {
+        "@types/jest": "^28.1.4",
+        "eslint": "^8.18.0",
+        "eslint-config-google": "^0.14.0",
+        "husky": "^8.0.1",
+        "jest": "^28.1.2",
+        "lint-staged": "^13.0.3"
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint"
+        ]
+    }
+}
