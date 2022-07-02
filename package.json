@@ -1,6 +1,6 @@
 {
     "name": "pad-center",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "pad-center fills between start and end characters with whatever character you want while keeping the length constant.",
     "license": "MIT",
     "type": "module",
