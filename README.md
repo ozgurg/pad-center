@@ -56,12 +56,12 @@ padCenter({
 
 All options are required.
 
-| Option    | Type                        |
-|-----------|-----------------------------|
-| startWith | `string &#124; number`      |
-| endWith   | `string &#124; number`      |
-| fillWith  | `string &#124; number`      |
-| length    | `number` (positive integer) |
+| Option    | Type                                   |
+|-----------|----------------------------------------|
+| startWith | <code>string &#124; number</code>      |
+| endWith   | <code>string &#124; number</code>      |
+| fillWith  | <code>string &#124; number</code>      |
+| length    | <code>number</code> (positive integer) |
 
 ## License
 
