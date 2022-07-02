@@ -23,7 +23,6 @@
         "name": "Özgür Görgülü",
         "url": "https://github.com/ozgurg"
     },
-    "types": "./src/types/pad-center.d.ts",
     "keywords": [
         "pad-center",
         "pad",

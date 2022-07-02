@@ -1,12 +1,11 @@
 {
     "include": [
-        "./src/*js"
+        "**/*.js"
     ],
     "exclude": [
-        "./src/*.test.js"
+        "**/*.test.js"
     ],
     "compilerOptions": {
-        "outDir": "./src/types",
         "declaration": true,
         "emitDeclarationOnly": true,
         "allowJs": true
