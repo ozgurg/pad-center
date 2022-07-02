@@ -26,7 +26,9 @@
         "pad-center",
         "pad",
         "pad-middle",
-        "string"
+        "barcode",
+        "generator",
+        "masking"
     ],
     "devDependencies": {
         "@types/jest": "^28.1.4",
