@@ -54,9 +54,9 @@ padCenter({
 
 ### padCenter({ startWith, endWith, fillWith, length })
 
-All options are required.
+All params are required.
 
-| Option    | Type                                   |
+| Param     | Type                                   |
 |-----------|----------------------------------------|
 | startWith | <code>string &#124; number</code>      |
 | endWith   | <code>string &#124; number</code>      |

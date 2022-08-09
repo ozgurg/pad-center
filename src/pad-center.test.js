@@ -70,8 +70,8 @@ describe("pad-center", () => {
         })).toStrictEqual("ABXY");
     });
 
-    describe("options validation", () => {
-        const options = {
+    describe("params validation", () => {
+        const params = {
             startWith: "S",
             endWith: "E",
             fillWith: "F",
@@ -81,15 +81,15 @@ describe("pad-center", () => {
         it("should throw error if 'startWith', 'endWith' or 'fillWith' is invalidr", () => {
             [null, undefined, {}, [], true, false].forEach(testValue => {
                 expect(() => {
-                    padCenter({ ...options, startWith: testValue });
+                    padCenter({ ...params, startWith: testValue });
                 }).toThrowError("\"startWith\" must be a string or a number.");
 
                 expect(() => {
-                    padCenter({ ...options, endWith: testValue });
+                    padCenter({ ...params, endWith: testValue });
                 }).toThrowError("\"endWith\" must be a string or a number.");
 
                 expect(() => {
-                    padCenter({ ...options, fillWith: testValue });
+                    padCenter({ ...params, fillWith: testValue });
                 }).toThrowError("\"fillWith\" must be a string or a number.");
             });
         });
@@ -97,34 +97,34 @@ describe("pad-center", () => {
         it("should not throw any error if 'startWith', 'endWith' or 'fillWith' is valid", () => {
             [0, 1, -1, NaN, Infinity, "", "A"].forEach(testValue => {
                 expect(() => {
-                    padCenter({ ...options, startWith: testValue });
+                    padCenter({ ...params, startWith: testValue });
                 }).not.toThrow();
 
                 expect(() => {
-                    padCenter({ ...options, endWith: testValue });
+                    padCenter({ ...params, endWith: testValue });
                 }).not.toThrow();
 
                 expect(() => {
-                    padCenter({ ...options, fillWith: testValue });
+                    padCenter({ ...params, fillWith: testValue });
                 }).not.toThrow();
             });
         });
 
         it("should throw error if 'length' is invalid", () => {
             expect(() => {
-                padCenter({ ...options, length: "im-not-a-number" });
+                padCenter({ ...params, length: "im-not-a-number" });
             }).toThrowError("\"length\" must be a number.");
 
             expect(() => {
-                padCenter({ ...options, length: 0 });
+                padCenter({ ...params, length: 0 });
             }).toThrowError("\"length\" must be greater than 0.");
 
             expect(() => {
-                padCenter({ ...options, length: -1 });
+                padCenter({ ...params, length: -1 });
             }).toThrowError("\"length\" must be greater than 0.");
 
             expect(() => {
-                padCenter({ ...options, length: 1.5 });
+                padCenter({ ...params, length: 1.5 });
             }).toThrowError("\"length\" must be an integer.");
         });
     });
