@@ -78,7 +78,7 @@ describe("pad-center", () => {
             length: 10
         };
 
-        it("should throw error if 'startWith', 'endWith' or 'fillWith' is invalidr", () => {
+        it("should throw error if 'startWith', 'endWith' or 'fillWith' is invalid", () => {
             [null, undefined, {}, [], true, false].forEach(testValue => {
                 expect(() => {
                     padCenter({ ...params, startWith: testValue });
