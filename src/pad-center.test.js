@@ -54,7 +54,7 @@ describe("pad-center", () => {
         })).toStrictEqual("10002");
     });
 
-    it("should ignore 'length'-'fillWith', if total length of 'startWith'-'endWith' is greater than or equal to 'length' and return 'startsWith'-'endsWith' combined", () => {
+    it("should ignore 'length' and 'fillWith', if total length of 'startWith' and 'endWith' is greater than or equal to 'length', and return 'startsWith' and 'endsWith' combined", () => {
         expect(padCenter({
             startWith: "A",
             endWith: "12",
@@ -94,7 +94,7 @@ describe("pad-center", () => {
             });
         });
 
-        it("should not throw any error if 'startWith', 'endWith' or 'fillWith' is valid", () => {
+        it("should not throw error if 'startWith', 'endWith' or 'fillWith' is valid", () => {
             [0, 1, -1, NaN, Infinity, "", "A"].forEach(testValue => {
                 expect(() => {
                     padCenter({ ...params, startWith: testValue });
