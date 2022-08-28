@@ -1,5 +1,5 @@
 /**
- * @param {{startWith: (string|number), endWith: (string|number), fillWith: (string|number), length: number}} params
+ * @param {{startWith: (string | number), endWith: (string | number), fillWith: (string | number), length: number}} params
  * @return {string}
  */
 const padCenter = params => {
@@ -22,6 +22,13 @@ const isString = value => typeof value === "string";
 const isStringOrNumber = value => isString(value) || isNumber(value);
 const isInteger = value => Number.isInteger(value);
 
+/**
+ * @param {*} startWith
+ * @param {*} endWith
+ * @param {*} fillWith
+ * @param {*} length
+ * @return {{startWith: (string | number), endWith: (string | number), fillWith: (string | number), length: number}}
+ */
 const validateParams = ({ startWith, endWith, fillWith, length }) => {
     if (!isStringOrNumber(startWith)) {
         throw new Error("\"startWith\" must be a string or a number.");
