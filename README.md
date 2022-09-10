@@ -33,7 +33,7 @@ padCenter({
     fillWith: "*",
     length: 11
 });
-// Returns: "053*******0"
+// "053*******0"
 
 padCenter({
     startWith: "GH1",
@@ -41,7 +41,7 @@ padCenter({
     fillWith: "0",
     length: 10
 });
-// Returns: "GH10000009"
+// "GH10000009"
 
 padCenter({
     startWith: "O",
@@ -49,21 +49,38 @@ padCenter({
     fillWith: "_",
     length: 8
 });
-// Returns: "O______G"
+// "O______G"
 ```
 
 ## API
 
-### padCenter({ startWith, endWith, fillWith, length })
+### padCenter(params) : string
 
-All params are required.
+#### params
 
-| Param     | Type                                   |
-|-----------|----------------------------------------|
-| startWith | <code>string &#124; number</code>      |
-| endWith   | <code>string &#124; number</code>      |
-| fillWith  | <code>string &#124; number</code>      |
-| length    | <code>number</code> (positive integer) |
+Default: <code>{}</code>\
+Type: <code>object</code>\
+Required: Yes
+
+#### params.startWith
+
+Type: <code>string | number</code>\
+Required: Yes
+
+#### params.endWith
+
+Type: <code>string | number</code>\
+Required: Yes
+
+#### params.fillWith
+
+Type: <code>string | number</code>\
+Required: Yes
+
+#### params.length
+
+Type: <code>number</code>\
+Required: Yes
 
 ## License
 
