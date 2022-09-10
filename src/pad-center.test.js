@@ -1,5 +1,3 @@
-// noinspection JSCheckFunctionSignatures
-
 import { padCenter } from "./pad-center.js";
 
 describe("pad-center", () => {

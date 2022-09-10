@@ -1,9 +1,24 @@
+const isNumber = value => typeof value === "number";
+const isString = value => typeof value === "string";
+const isStringOrNumber = value => isString(value) || isNumber(value);
+const isInteger = value => Number.isInteger(value);
+
 /**
- * @param {{startWith: (string|number), endWith: (string|number), fillWith: (string|number), length: number}} params
- * @return {string}
+ * @param {{
+ * startWith: (string | number),
+ * endWith: (string | number),
+ * fillWith: (string | number),
+ * length: number
+ * }} params
+ * @returns {string}
  */
 const padCenter = params => {
-    const { startWith, endWith, fillWith, length } = validateParams(params);
+    const {
+        startWith,
+        endWith,
+        fillWith,
+        length
+    } = validateParams(params);
 
     const countWithoutFillChar = startWith.length + endWith.length;
 
@@ -16,11 +31,6 @@ const padCenter = params => {
 
     return `${startWith}${center}${endWith}`;
 };
-
-const isNumber = value => typeof value === "number";
-const isString = value => typeof value === "string";
-const isStringOrNumber = value => isString(value) || isNumber(value);
-const isInteger = value => Number.isInteger(value);
 
 const validateParams = ({ startWith, endWith, fillWith, length }) => {
     if (!isStringOrNumber(startWith)) {
@@ -47,12 +57,17 @@ const validateParams = ({ startWith, endWith, fillWith, length }) => {
         throw new Error("\"length\" must be greater than 0.");
     }
 
-    startWith = startWith.toString();
-    endWith = endWith.toString();
-    fillWith = fillWith.toString();
+    startWith = startWith.toString().trim();
+    endWith = endWith.toString().trim();
+    fillWith = fillWith.toString().trim();
     length = parseInt(length);
 
-    return { startWith, endWith, fillWith, length };
+    return {
+        startWith,
+        endWith,
+        fillWith,
+        length
+    };
 };
 
 export {
