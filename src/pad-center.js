@@ -57,9 +57,9 @@ const validateParams = ({ startWith, endWith, fillWith, length }) => {
         throw new Error("\"length\" must be greater than 0.");
     }
 
-    startWith = startWith.toString();
-    endWith = endWith.toString();
-    fillWith = fillWith.toString();
+    startWith = startWith.toString().trim();
+    endWith = endWith.toString().trim();
+    fillWith = fillWith.toString().trim();
     length = parseInt(length);
 
     return {
