@@ -3,7 +3,7 @@
 
 # pad-center
 
-`pad-center` fills between the start and end characters with whatever character you want while maintaining the length.
+`pad-center` fills between the start and end characters with character you want while maintaining the length.
 Like [padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 and [padEnd](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd) but from
 center, padCenter!
